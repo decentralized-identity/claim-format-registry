@@ -73,6 +73,8 @@ Maintainers reserve the right to reject, remove, or delay acceptance of PRs.
 
 ## Registry 
 
+|Abbrev|AKA|Description|`alg`|`proof_type`|
+|---|---|---|---|---|
 |`jwt`|"Vanilla JWT"|The format is a JSON Web Token (JWT) as defined by [RFC7519][] that will be submitted in the form of a JWT encoded string. Expression of supported algorithms in relation to this format MUST be conveyed using an alg property paired with values that are identifiers from the JSON Web Algorithms registry [RFC7518][].|See [RFC7518sec3][]|n/a|
 |`jwt_vc`,`jwt_vp`|"JWT VC/VP"|These formats are JSON Web Tokens (JWTs) [RFC7519][] that will be submitted in the form of a JWT-encoded string, with a payload extractable from it defined according to the JSON Web Token (JWT) [section] of the W3C [VC-DATA-MODEL][] specification. Expression of supported algorithms in relation to these formats MUST be conveyed using an JWT `alg` property paired with values that are identifiers from the JSON Web Algorithms registry in [RFC7518-sec3][].|See [RFC7518sec3][]|n/a|
 |`ldp`|"Linked Data Proof"|The format is a Linked-Data Proof that will be submitted as an object. Expression of supported algorithms in relation to these formats MUST be conveyed using a `proof_type` property with values that are identifiers from the Linked Data Cryptographic Suite Registry ([LDP-Registry][]).|n/a|See [LDP-Registry][]|
