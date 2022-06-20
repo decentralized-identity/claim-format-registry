@@ -2,7 +2,7 @@
 {
   "specs": [
     {
-      "title": "Spec-Up Example",
+      "title": "Claim Format Registry",
       "spec_directory": "./single-file-test",
       "output_path": "./",
       "logo": "logo.svg",
