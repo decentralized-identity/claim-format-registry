@@ -1,4 +1,4 @@
-Template for a Registry Document
+Claim Format Registry
 ==================
 
 **Registry Status:** Proposed
