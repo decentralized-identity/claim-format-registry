@@ -16,9 +16,9 @@ Contributors:
 ~ [Juan Caballero](https://github.com/bumblefudge) ([Centre Consortium](https://centre.io))
 
 Participate:
-~ [GitHub repo](https://github.com/decentralized-identity/<profile-name>)
-~ [File a bug](https://github.com/decentralized-identity/<profile-name>/issues)
-~ [Commit history](https://github.com/decentralized-identity/<profile-name>/commits/master)
+~ [GitHub repo](https://github.com/decentralized-identity/claim-format-registry)
+~ [File a bug](https://github.com/decentralized-identity/claim-format-registry/issues)
+~ [Commit history](https://github.com/decentralized-identity/claim-format-registry/commits/master)
 
 ------------------------------------
 
