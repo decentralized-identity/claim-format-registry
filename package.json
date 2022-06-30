@@ -6,7 +6,7 @@
   "license": "Apache 2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/decentralized-identity/claim-format-designations"
+    "url": "git://github.com/decentralized-identity/claim-format-registry"
   },
   "dependencies": {
     "spec-up": "^0.10.3"
