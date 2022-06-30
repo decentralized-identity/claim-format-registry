@@ -1,15 +1,19 @@
 # Registry Instructions
 
-1. Fill out template, defining as much as possible what will go into the registry. A starter document structure can be found in `single-file-test/spec.md`. This guide can be expanded and altered but folling the highlevel strucutre will make it easier for readrs to get up to speed with the profile. 
-2. Contact the working group chairs for approval before accepting OUTSIDE registrations. Feel free to "prime the pump" with a few of your own before submitting for approval. 
-4. Once approved, periodic checks and, if needed, editorial meetings should take place once a month or more. Contact chairs in case of hand-off of maintenance, or if outages of maintenance are foreseen.
-5. Configure GitPages!
+A registry for claim formats to be used primarily in [Presentation Exchange](https://identity.foundation/presentation-exchange/).
+
+### [Latest Editor's Draft](https://identity.foundation/claim-format-registry/)
 
 
-## Spec-Up
+## Getting Started
 
-For spec-up setup, see the [spec-up readme](https://github.com/decentralized-identity/spec-up)
-TLDR run 
+```
+git clone git@github.com:decentralized-identity/claim-format-registry.git
+cd claim-format-registry
+npm i
+npm run edit
+npx serve build
+```
 
-Update "name" value in `package.json` and `package-lock.json` with the name of the project
-`npm install spec-up`
+Visit http://localhost:5000/
+
