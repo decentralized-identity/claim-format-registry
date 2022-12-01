@@ -76,10 +76,10 @@ Maintainers reserve the right to reject, remove, or delay acceptance of PRs.
 
 |Abbrev|AKA|Description|`alg`|`proof_type`|
 |---|---|---|---|---|
-|`jwt`|"Vanilla JWT"|The format is a JSON Web Token (JWT) as defined by [[RFC7519]] that will be submitted in the form of a JWT encoded string. Expression of supported algorithms in relation to this format MUST be conveyed using an alg property paired with values that are identifiers from the JSON Web Algorithms registry [[RFC7518]].|See [[RFC7518sec3]]|n/a|
-|`jwt_vc`,`jwt_vp`|"JWT VC/VP"|These formats are JSON Web Tokens (JWTs) [[RFC7519]] that will be submitted in the form of a JWT-encoded string, with a payload extractable from it defined according to the JSON Web Token (JWT) [section] of the W3C [[VC-DATA-MODEL]] specification. Expression of supported algorithms in relation to these formats MUST be conveyed using an JWT `alg` property paired with values that are identifiers from the JSON Web Algorithms registry in [[RFC7518-sec3]].|See [[RFC7518sec3]]|n/a|
-|`ldp`|"Linked Data Proof"|The format is a Linked-Data Proof that will be submitted as an object. Expression of supported algorithms in relation to these formats MUST be conveyed using a `proof_type` property with values that are identifiers from the Linked Data Cryptographic Suite Registry ([[LDP-Registry]]).|n/a|See [[LDP-Registry]]|
-|`ldp_vc`, `ldp_vp`|"Linked-Data VC/VP"|Verifiable Credentials or Verifiable Presentations signed with Linked Data Proof formats. These are descriptions of formats normatively defined in the W3C Verifiable Credentials specification [[VC-DATA-MODEL]], and will be submitted in the form of a JSON object. Expression of supported algorithms in relation to these formats MUST be conveyed using a proof_type property paired with values that are identifiers from the Linked Data Cryptographic Suite Registry ([[LDP-Registry]]).|n/a|See [[LDP-Registry]]|
+|`jwt`|"Vanilla JWT"|The format is a JSON Web Token (JWT) as defined by [[ref: RFC7519]] that will be submitted in the form of a JWT encoded string. Expression of supported algorithms in relation to this format MUST be conveyed using an alg property paired with values that are identifiers from the JSON Web Algorithms registry [[ref: RFC7518]].|See [[ref: RFC7518sec3]]|n/a|
+|`jwt_vc`,`jwt_vp`|"JWT VC/VP"|These formats are JSON Web Tokens (JWTs) [[ref: RFC7519]] that will be submitted in the form of a JWT-encoded string, with a payload extractable from it defined according to the JSON Web Token (JWT) section of the W3C [[ref: VC-DATA-MODEL]] specification. Expression of supported algorithms in relation to these formats MUST be conveyed using an JWT `alg` property paired with values that are identifiers from the JSON Web Algorithms registry in [[ref: RFC7518-sec3]].|See [[ref: RFC7518sec3]]|n/a|
+|`ldp`|"Linked Data Proof"|The format is a Linked-Data Proof that will be submitted as an object. Expression of supported algorithms in relation to these formats MUST be conveyed using a `proof_type` property with values that are identifiers from the Linked Data Cryptographic Suite Registry ([[ref: LDP-Registry]]).|n/a|See [[ref: LDP-Registry]]|
+|`ldp_vc`, `ldp_vp`|"Linked-Data VC/VP"|Verifiable Credentials or Verifiable Presentations signed with Linked Data Proof formats. These are descriptions of formats normatively defined in the W3C Verifiable Credentials specification [[ref: VC-DATA-MODEL]], and will be submitted in the form of a JSON object. Expression of supported algorithms in relation to these formats MUST be conveyed using a proof_type property paired with values that are identifiers from the Linked Data Cryptographic Suite Registry ([[ref: LDP-Registry]]).|n/a|See [[ref: LDP-Registry]]|
 
 ## JSON Schemas
 
@@ -99,11 +99,11 @@ Maintainers reserve the right to reject, remove, or delay acceptance of PRs.
 
 ### References
 
-[[def: RFC7518, RFC7518sec3]]
+[[def: RFC7518, RFC7518sec3]] -  JSON Web Algorithms (JWA), 2015
 - [RFC7518](https://datatracker.ietf.org/doc/html/rfc7518)
-- [RFC7518sec3](https://datatracker.ietf.org/doc/html/rfc7518#section-3)
+- [Section 3](https://datatracker.ietf.org/doc/html/rfc7518#section-3): Cryptographic Algorithms for Digital Signatures and MACs
 
-[[def: RFC7519]]
+[[def: RFC7519]] - JSON Web Token (JWT), 2015
 - [RFC7519](https://datatracker.ietf.org/doc/html/rfc7519)
 
 [[def: VC-DATA-MODEL]]
