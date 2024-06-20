@@ -27,25 +27,22 @@ Participate:
 
 This registry tracks canonical references to claim formats in the verifiable credential ecosystem for use by DIF specifications, i.e. [Presentation Exchange](https://identity.foundation/presentation-exchange/#claim-format-designations).
 
-### Audience
-
-Who is the audience for this document, and what can they trust/assume about the
-document?
-
 ## Status of This Document
 
-The structure (not the content) of this registry is classed as a PROPOSED
+The structure (not the content) of this registry is classed as a ****PROPOSED****
 specification under development within the Decentralized Identity Foundation
 (DIF).
 
-NOTE: Until working group chairs have approved a registry (all fields complete
+:::note
+Until working group chairs have approved a registry (all fields complete
 and detailed, registry structured, instructions for new entries written), the
-status of a registry is PROPOSED.  Working Group chairs may escalate to the DIF
+status of a registry is ****PROPOSED****.  Working Group chairs may escalate to the DIF
 Steering Committee if they disagree about the readiness of a registry
 definition, or if they are concerned about the implications of DIF approving
-registry as-is.  Once approved, a registry is ACTIVE at long as it has one or
+registry as-is.  Once approved, a registry is ****ACTIVE**** at long as it has one or
 more responsible code-owners managing new PRs; working group chairs may switch a
-registry to ARCHIVED or HIBERNATED if this stops being the case.
+registry to ****ARCHIVED**** or ****HIBERNATED**** if this stops being the case.
+:::
 
 ### Dependencies
 
@@ -61,7 +58,7 @@ Each row represents a "format," i.e. a set of possible envelopes and signing mec
 * Abbreviation: A short string without whitespace used as reference for a format.
 * AKA: Also known as...
 * Description: A narrative description
-* `alg`: A list of algorithm references from the JW* family of tokens (defined in [[ref:RFC7518sec3]]) that may be supported within the format. 
+* `alg`: A list of algorithm references from the JW* family of tokens (defined in [[spec:RFC7518]] [Section 3](https://datatracker.ietf.org/doc/html/rfc7518#section-3).) that may be supported within the format. 
 * `proof_type`: A list of Linked-Data integrity proof types (defined in the [[ref:Data-Integrity]] draft specification, a work item of the Verifiable Credentials working group at the W3C) that may be supported within the format.
 
 ### Additional Instructions for Registrants
@@ -76,8 +73,8 @@ Maintainers reserve the right to reject, remove, or delay acceptance of PRs.
 
 |Abbrev|AKA|Description|`alg`|`proof_type`|
 |---|---|---|---|---|
-|`jwt`|"Vanilla JWT"|The format is a JSON Web Token (JWT) as defined by [[ref:RFC7519]] that will be submitted in the form of a JWT encoded string. Expression of supported algorithms in relation to this format MUST be conveyed using an alg property paired with values that are identifiers from the JSON Web Algorithms registry [[ref:RFC7518]].|See [[ref:RFC7518sec3]]|n/a|
-|`jwt_vc`,`jwt_vp`|"JWT VC/VP"|These formats are JSON Web Tokens (JWTs) [[ref:RFC7519]] that will be submitted in the form of a JWT-encoded string, with a payload extractable from it defined according to the JSON Web Token (JWT) [section] of the W3C [[ref:VC-DATA-MODEL]] specification. Expression of supported algorithms in relation to these formats MUST be conveyed using an JWT `alg` property paired with values that are identifiers from the JSON Web Algorithms registry in [[ref:RFC7518sec3]].|See [[ref:RFC7518sec3]]|n/a|
+|`jwt`|"Vanilla JWT"|The format is a JSON Web Token (JWT) as defined by [[spec:RFC7519]] that will be submitted in the form of a JWT encoded string. Expression of supported algorithms in relation to this format MUST be conveyed using an alg property paired with values that are identifiers from the JSON Web Algorithms registry [[spec:RFC7518]].|See [[spec:RFC7518]] [Section 3](https://datatracker.ietf.org/doc/html/rfc7518#section-3).|n/a|
+|`jwt_vc`,`jwt_vp`|"JWT VC/VP"|These formats are JSON Web Tokens (JWTs) [[spec:RFC7519]] that will be submitted in the form of a JWT-encoded string, with a payload extractable from it defined according to the JSON Web Token (JWT) [section] of the W3C [[ref:VC-DATA-MODEL]] specification. Expression of supported algorithms in relation to these formats MUST be conveyed using an JWT `alg` property paired with values that are identifiers from the JSON Web Algorithms registry in [[spec:RFC7518]] [Section 3](https://datatracker.ietf.org/doc/html/rfc7518#section-3).|See [[spec:RFC7518]] [Section 3](https://datatracker.ietf.org/doc/html/rfc7518#section-3).|n/a|
 |`ldp`|"Linked Data Proof"|The format is a Linked-Data Proof that will be submitted as an object. Expression of supported algorithms in relation to these formats MUST be conveyed using a `proof_type` property with values that are identifiers from the Linked Data Cryptographic Suite Registry ([[ref:LDP-Registry]]).|n/a|See [[ref:LDP-Registry]]|
 |`ldp_vc`, `ldp_vp`|"Linked-Data VC/VP"|Verifiable Credentials or Verifiable Presentations signed with Linked Data Proof formats. These are descriptions of formats normatively defined in the W3C Verifiable Credentials specification [[ref:VC-DATA-MODEL]], and will be submitted in the form of a JSON object. Expression of supported algorithms in relation to these formats MUST be conveyed using a proof_type property paired with values that are identifiers from the Linked Data Cryptographic Suite Registry ([[ref:LDP-Registry]]).|n/a|See [[ref:LDP-Registry]]|
 |`ac_vc`|"AnonCreds VC"|This format is for Verifiable Credentials using AnonCreds. AnonCreds is a VC format that adds important privacy-protecting ZKP (zero-knowledge proof) capabilities to the core VC assurances.|See [[ref:AnonCreds]]|n/a|
@@ -103,15 +100,6 @@ Maintainers reserve the right to reject, remove, or delay acceptance of PRs.
 ## Appendix
 
 ### References
-
-[[def:RFC7518]]
-~ [RFC7518](https://datatracker.ietf.org/doc/html/rfc7518)
-
-[[def:RFC7518sec3]]
-~ [RFC7518sec3](https://datatracker.ietf.org/doc/html/rfc7518#section-3)
-
-[[def:RFC7519]]
-~ [RFC7519](https://datatracker.ietf.org/doc/html/rfc7519)
 
 [[def:ISO.18013-5]]
 ~ [ISO.18013-5](https://www.iso.org/standard/69084.html). ISO/IEC JTC 1/SC 17 Cards and security devices for personal identification, "ISO/IEC 18013-5:2021 Personal identification — ISO-compliant driving license — Part 5: Mobile driving license (mDL) application", 2021.
