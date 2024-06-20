@@ -61,8 +61,8 @@ Each row represents a "format," i.e. a set of possible envelopes and signing mec
 * Abbreviation: A short string without whitespace used as reference for a format.
 * AKA: Also known as...
 * Description: A narrative description
-* `alg`: A list of algorithm references from the JW* family of tokens (defined in [RFC7518sec3][]) that may be supported within the format. 
-* `proof_type`: A list of Linked-Data integrity proof types (defined in the [Data-Integrity][] draft specification, a work item of the Verifiable Credentials working group at the W3C) that may be supported within the format.
+* `alg`: A list of algorithm references from the JW* family of tokens (defined in [[ref:RFC7518sec3]]) that may be supported within the format. 
+* `proof_type`: A list of Linked-Data integrity proof types (defined in the [[ref:Data-Integrity]] draft specification, a work item of the Verifiable Credentials working group at the W3C) that may be supported within the format.
 
 ### Additional Instructions for Registrants
 
@@ -76,14 +76,17 @@ Maintainers reserve the right to reject, remove, or delay acceptance of PRs.
 
 |Abbrev|AKA|Description|`alg`|`proof_type`|
 |---|---|---|---|---|
-|`jwt`|"Vanilla JWT"|The format is a JSON Web Token (JWT) as defined by [RFC7519][] that will be submitted in the form of a JWT encoded string. Expression of supported algorithms in relation to this format MUST be conveyed using an alg property paired with values that are identifiers from the JSON Web Algorithms registry [RFC7518][].|See [RFC7518sec3][]|n/a|
-|`jwt_vc`,`jwt_vp`|"JWT VC/VP"|These formats are JSON Web Tokens (JWTs) [RFC7519][] that will be submitted in the form of a JWT-encoded string, with a payload extractable from it defined according to the JSON Web Token (JWT) [section] of the W3C [VC-DATA-MODEL][] specification. Expression of supported algorithms in relation to these formats MUST be conveyed using an JWT `alg` property paired with values that are identifiers from the JSON Web Algorithms registry in [RFC7518-sec3][].|See [RFC7518sec3][]|n/a|
-|`ldp`|"Linked Data Proof"|The format is a Linked-Data Proof that will be submitted as an object. Expression of supported algorithms in relation to these formats MUST be conveyed using a `proof_type` property with values that are identifiers from the Linked Data Cryptographic Suite Registry ([LDP-Registry][]).|n/a|See [LDP-Registry][]|
-|`ldp_vc`, `ldp_vp`|"Linked-Data VC/VP"|Verifiable Credentials or Verifiable Presentations signed with Linked Data Proof formats. These are descriptions of formats normatively defined in the W3C Verifiable Credentials specification [VC-DATA-MODEL][], and will be submitted in the form of a JSON object. Expression of supported algorithms in relation to these formats MUST be conveyed using a proof_type property paired with values that are identifiers from the Linked Data Cryptographic Suite Registry ([LDP-Registry][]).|n/a|See [LDP-Registry][]|
-| `mso_mdoc` |"mDoc"|The format is defined by ISO/IEC 18013-5:2021 [ISO.18013-5][] whcih defines a mobile driving license (mDL) Credential in the mobile document (mdoc) format. Although ISO/IEC 18013-5:2021 [ISO.18013-5][] is specific to mobile driving licenses (mDLs), the Credential format can be utilized with any type of Credential (or mdoc document types).|See [ISO.18013-5][], [ISO.18013-7][]|
-| `ac_vp`
+|`jwt`|"Vanilla JWT"|The format is a JSON Web Token (JWT) as defined by [[ref:RFC7519]] that will be submitted in the form of a JWT encoded string. Expression of supported algorithms in relation to this format MUST be conveyed using an alg property paired with values that are identifiers from the JSON Web Algorithms registry [[ref:RFC7518]].|See [[ref:RFC7518sec3]]|n/a|
+|`jwt_vc`,`jwt_vp`|"JWT VC/VP"|These formats are JSON Web Tokens (JWTs) [[ref:RFC7519]] that will be submitted in the form of a JWT-encoded string, with a payload extractable from it defined according to the JSON Web Token (JWT) [section] of the W3C [[ref:VC-DATA-MODEL]] specification. Expression of supported algorithms in relation to these formats MUST be conveyed using an JWT `alg` property paired with values that are identifiers from the JSON Web Algorithms registry in [[ref:RFC7518sec3]].|See [[ref:RFC7518sec3]]|n/a|
+|`ldp`|"Linked Data Proof"|The format is a Linked-Data Proof that will be submitted as an object. Expression of supported algorithms in relation to these formats MUST be conveyed using a `proof_type` property with values that are identifiers from the Linked Data Cryptographic Suite Registry ([[ref:LDP-Registry]]).|n/a|See [[ref:LDP-Registry]]|
+|`ldp_vc`, `ldp_vp`|"Linked-Data VC/VP"|Verifiable Credentials or Verifiable Presentations signed with Linked Data Proof formats. These are descriptions of formats normatively defined in the W3C Verifiable Credentials specification [[ref:VC-DATA-MODEL]], and will be submitted in the form of a JSON object. Expression of supported algorithms in relation to these formats MUST be conveyed using a proof_type property paired with values that are identifiers from the Linked Data Cryptographic Suite Registry ([[ref:LDP-Registry]]).|n/a|See [[ref:LDP-Registry]]|
+|`ac_vc`|"AnonCreds VC"|This format is for Verifiable Credentials using AnonCreds. AnonCreds is a VC format that adds important privacy-protecting ZKP (zero-knowledge proof) capabilities to the core VC assurances.|See [[ref:AnonCreds]]|n/a|
+|`ac_vp`|"AnonCreds VP"|This format is for Verifiable Presentations using AnonCreds. AnonCreds is a VC format that adds important privacy-protecting ZKP (zero-knowledge proof) capabilities to the core VC assurances.|See [[ref:AnonCreds]]|n/a|
+|`mso_mdoc`|"mDoc"|The format is defined by ISO/IEC 18013-5:2021 [[ref:ISO.18013-5]] whcih defines a mobile driving license (mDL) Credential in the mobile document (mdoc) format. Although ISO/IEC 18013-5:2021 [[ref:ISO.18013-5]] is specific to mobile driving licenses (mDLs), the Credential format can be utilized with any type of Credential (or mdoc document types).|See [[ref:ISO.18013-5]], [[ref:ISO.18013-7]]|n/a|
 
 ## JSON Schemas
+
+[[ref:JSON Schema]]s defined using [JSON Schema Draft 7](https://json-schema.org/specification-links#draft-7).
 
 ### Presentation Definition Claim Format Designations
 
@@ -101,30 +104,32 @@ Maintainers reserve the right to reject, remove, or delay acceptance of PRs.
 
 ### References
 
-[[def: RFC7518]]
-- [RFC7518](https://datatracker.ietf.org/doc/html/rfc7518)
+[[def:RFC7518]]
+~ [RFC7518](https://datatracker.ietf.org/doc/html/rfc7518)
 
-[[def: RFC7518sec3]]
-- [RFC7518sec3](https://datatracker.ietf.org/doc/html/rfc7518#section-3)
+[[def:RFC7518sec3]]
+~ [RFC7518sec3](https://datatracker.ietf.org/doc/html/rfc7518#section-3)
 
-[[def: RFC7519]]
-- [RFC7519](https://datatracker.ietf.org/doc/html/rfc7519)
+[[def:RFC7519]]
+~ [RFC7519](https://datatracker.ietf.org/doc/html/rfc7519)
 
-[[def: ISO.18013-5]]
-- [ISO.18013-5](https://www.iso.org/standard/69084.html). ISO/IEC JTC 1/SC 17 Cards and security devices for personal identification, "ISO/IEC 18013-5:2021 Personal identification — ISO-compliant driving license — Part 5: Mobile driving license (mDL) application", 2021.
+[[def:ISO.18013-5]]
+~ [ISO.18013-5](https://www.iso.org/standard/69084.html). ISO/IEC JTC 1/SC 17 Cards and security devices for personal identification, "ISO/IEC 18013-5:2021 Personal identification — ISO-compliant driving license — Part 5: Mobile driving license (mDL) application", 2021.
 
-[[def: ISO.18013-7]]
-- [ISO.18013-7](https://www.iso.org/standard/82772.html). ISO/IEC JTC 1/SC 17 Cards and security devices for personal identification, "ISO/IEC DTS 18013-7 Personal identification — ISO-compliant driving license — Part 7: Mobile driving license (mDL) add-on functions", 2024, <https://www.iso.org/standard/82772.html>.
+[[def:ISO.18013-7]]
+~ [ISO.18013-7](https://www.iso.org/standard/82772.html). ISO/IEC JTC 1/SC 17 Cards and security devices for personal identification, "ISO/IEC DTS 18013-7 Personal identification — ISO-compliant driving license — Part 7: Mobile driving license (mDL) add-on functions", 2024, <https://www.iso.org/standard/82772.html>.
 
-[[def: VC-DATA-MODEL]]
-  - [Verifiable Credentials Data Model v1.1](https://www.w3.org/TR/vc-data-model/). Gregg Kellogg, Pierre-Antoine Champin, Manu Sporny, Grant Noble, Dave Longley, Daniel C. Burnett, Brent Zundel, Kyle Den Hartog. 03 March 2022. Status: W3C Recommendation.
+[[def:VC-DATA-MODEL]]
+~ [Verifiable Credentials Data Model v1.1](https://www.w3.org/TR/vc-data-model/). Gregg Kellogg, Pierre-Antoine Champin, Manu Sporny, Grant Noble, Dave Longley, Daniel C. Burnett, Brent Zundel, Kyle Den Hartog. 03 March 2022. Status: W3C Recommendation.
 
-[[def: JSON Schema]]
-  - [JSON Schema](https://json-schema.org/)
-  - [JSON Schema: A Media Type for Describing JSON Documents](https://json-schema.org/draft/2020-12/json-schema-core.html). A. Wright, H. Andrews, B. Hutton, G. Dennis. Status: 28 January 2020. Internet-Draft.
+[[def:JSON Schema]]
+~ [JSON Schema](https://json-schema.org/). [JSON Schema Draft 7: A Media Type for Describing JSON Documents](https://json-schema.org/draft-07/draft-handrews-json-schema-01). A. Wright, H. Andrews. Status: 20 September 2018. Internet-Draft.
 
-[[def: LDP-Registry]]
-- [LDP-Registry](https://w3c-ccg.github.io/ld-cryptosuite-registry/)
+[[def:LDP-Registry]]
+~ [LDP-Registry](https://w3c-ccg.github.io/ld-cryptosuite-registry/)
 
-[[def: Linked Data Proofs, Data Integrity]]
-  - [Data Integrity 1.0](https://w3c-ccg.github.io/data-integrity-spec/). Dave Longley, Manu Sporny. 30 April 2022. Status: W3C Draft Community Report.
+[[def:Linked Data Proofs, Data Integrity]]
+~ [Verifiable Credential Data Integrity 1.0](https://www.w3.org/TR/vc-data-integrity/). Securing the Integrity of Verifiable Credential Data. Manu Sporny, Dave Longley, Greg Bernstein, Dmitri Zagidulin, Sebastian Crane. 14 June 2024. Status: W3C Candidate Recommendation Draft.
+
+[[def:AnonCreds]]
+~ [AnonCreds v1.0 Draft](https://hyperledger.github.io/anoncreds-spec/). Stephen Curran, Artur Philipp, Hakan Yildiz, Sam Curren, Victom Martinez Jurado, Aritra Bhaduri, Artem Ivanov. Status: v1.0 Draft.
