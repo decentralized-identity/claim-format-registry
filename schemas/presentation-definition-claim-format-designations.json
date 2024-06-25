@@ -25,6 +25,20 @@
           "items": { "type": "string" }
         }
       }
+    },
+    "^ac_vc$|^ac_vp$": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "proof_type": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "mso_mdoc": {
+      "type": "object"
     }
   }
 }

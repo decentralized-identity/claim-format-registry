@@ -9,7 +9,7 @@
     "url": "git://github.com/decentralized-identity/claim-format-registry"
   },
   "dependencies": {
-    "spec-up": "^0.10.3"
+    "spec-up": "^0.10.7"
   },
   "devDependencies": {
     "ajv": "^6.12.5",
