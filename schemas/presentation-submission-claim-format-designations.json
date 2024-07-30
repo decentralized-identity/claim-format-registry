@@ -5,7 +5,7 @@
   "definitions": {
     "format": {
       "type": "string",
-      "enum": ["jwt", "jwt_vc", "jwt_vp", "ldp", "ldp_vc", "ldp_vp", "mso_mdoc", "ac_vc", "ac_vp"]
+      "enum": ["jwt", "jwt_vc", "jwt_vp", "ldp", "ldp_vc", "ldp_vp", "mso_mdoc", "ac_vc", "ac_vp", "sd_jwt"]
     }
   }
 }
