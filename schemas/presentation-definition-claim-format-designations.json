@@ -39,6 +39,17 @@
     },
     "mso_mdoc": {
       "type": "object"
+    },
+    "^sd_jwt$": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "alg": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        }
+      }
     }
   }
 }
